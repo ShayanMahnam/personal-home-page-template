@@ -1,0 +1,225 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #666666;
+  scroll-behavior: smooth;
+}
+.c-site-header{
+    width: 100%;
+  border-radius:0px 9px;
+  background-color:#dce0e3;
+  margin-left: auto;
+  margin-right: auto;
+  display:inline;
+}
+.dropbtn {
+  background-color:#132129;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius:20%;
+  cursor: pointer;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding:10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.nightmode{
+  background-color:#132129;
+  color: white;
+  display: flex-inline;
+}
+
+.head1{
+   background-color:#132129;
+  border-radius:30px 80px;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 10px;
+}
+
+h1{
+  font-family:Sofia, Garamond;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+    
+}
+img {
+  border-radius: 50%;
+  outline:2px solid #dce0e3;
+  max-width: 100%;
+  max-height: 100%; 
+  filter: grayscale(100%);
+ 
+}
+.mypic{
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.mypic:hover{
+  border-radius: 50%;
+  animation: shadowmove 5s infinite;
+}
+@keyframes shadowmove {
+  40% {box-shadow: 10px 20px 25px black;}
+   75% {box-shadow: -10px -5px 25px black;}
+}
+
+.aboutme{
+  width: 70%;
+  height:auto;
+  background-color:#132129;
+  border-radius: 60px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  box-shadow: 5px 10px;
+}
+
+.aboutme2{
+  font-family:arial;
+  font-weight: bold;
+  line-height: 1.6;
+  color:#dce0e3;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.video{
+  margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+iframe{
+  width:540;
+  height:315;
+  text-align:center;
+  margin:auto;
+  display: block;
+   border-style:none;
+}
+
+.c-site-footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  text-align:center;
+  margin: auto;
+  padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+  width: 40px;
+    height: 28px;
+  color: #132129;
+  background-color: #dbd5d5;
+  border: 3px solid #132129;
+  padding-top: 12px;
+  border-radius: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+  color: #dce0e3;
+  background-color: #132129;
+  border: 3px solid #132129;
+}
+
+a span {
+  color:#dce0e3;
+  position:absolute;
+  font-family:sans-serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:#132129;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #132129;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+a:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
