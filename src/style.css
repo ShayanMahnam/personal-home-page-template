@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
 }
 .c-site-header{
-    
+    position: inherit;
 }
 .menu-btn{
   position: relative;
