@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
+const navbar = document.querySelector('.navbar')
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
@@ -9,3 +10,6 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+menuBtn.addEventListener('click', () => {
+    navbar.classList.toggle('change');
+} );
