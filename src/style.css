@@ -12,14 +12,14 @@ body {
   scroll-behavior: smooth;
 }
 .c-site-header{
-    position: fixed;
+    position: relative;
     background-size: cover;
 }
 .navbar{
   width: 250px;
   height: 100%;
   background-color: #132129;
-  position: relative;
+  position: fixed;
   top: 0;
   left: -300px;
   display: flex;
