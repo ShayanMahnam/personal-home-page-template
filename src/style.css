@@ -12,7 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 .c-site-header{
-    position: inherit;
+    position: fixed;
     background-size: cover;
 }
 .navbar{
